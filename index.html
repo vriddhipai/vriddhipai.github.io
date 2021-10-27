@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-gem"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Vriddhi Pai</h1>
+					<p>I'm an early-career Technologist with an undying zeal for experimenting
+						with<br />
+						new tools and technologies every day. Check out some of my work and I hope we can connect!</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">About Me</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#articles">Articles</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">About Me</h2>
+				<span class="image main"><img src="images/gradphoto.jpeg" alt="" /></span>
+				<p style="text-align:justify">Hello!<br>Thanks for visiting! I'm Vriddhi, a Technical Consultant who
+					doesn't rely on familiarity when it comes to building anything. I believe my inquisitiveness and
+					sheer love for experimentation have led me to explore a multitude of tools and technologies that
+					I now hope to leverage in my next venture in the capacity of a full-time Software Engineer! Some of
+					my recent works fall in the realm of Databases, Parallel Programming and Distributed Systems.<br>
+					I'm currently actively looking to challenge myself, not just as a technical professional but also as
+					a team player; especially after tasting success in building some truly valuable working
+					relationships through team projects that I've been part of thus far. I always found myself stepping
+					up as the backbone of the team; the one who bound the team together, planned the goals and
+					milestones for different project modules and shone during team presentations.<br> My work experience
+					so far has helped me channelize my core strengths into delivering real-time solutions and results in
+					a truly timely fashion and most importantly, amidst much senior professionals of the industry. My
+					all-time favorite programming language is Java! At the moment, I'm engaged in exploring Cloud
+					Fundamentals through AWS.<br> When I'm not nerding out in front of a system, I'm sketching portraits
+					of friends and family or out and about exploring new cuisines with my favorite people!<br> I dream
+					to be the face of diversity and versatility in the workforce of a dynamic organization. <br>
+					Let's connect!
+				<p style="text-align:justify">(Don't forget to check out some of my <a href="#work">Projects</a> and <a
+						href="#articles">Articles!)</a></p>
+
+			</article>
+
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">P2P File System</h2>
+				<span class="image main"><img src="images/file-serber-001.png" alt="" /></span>
+				<p style="text-align:justify">A P2P network resembles some features of the popular Bit-torrent Protocol,
+					but much simplified. There are two pieces of software – peer and file owner. The file owner has the
+					file which it breaks into chunks of 100KB, each stored as a separate file. This file owner listens
+					on a TCP port where the file owner is the server that can run multiple threads to serve multiple
+					clients or peers simultaneously. I started by programming the the server to ensure the connection
+					with the port was established to have it ready to listen to client requests. Once the server was up
+					and running, I programmed the logic for a peer so it could connect to the file owner to download
+					some chunks. I then programmed a peer to establish its two threads of control, one acting as a
+					server that uploads the local chunks to another peer (referred to as upload neighbor), and the other
+					acting as a client that downloads chunks from a third peer (referred to as download neighbor). So
+					each peer has two neighbors, one of which will get chunks from one peer and the other will send
+					chunks to another peer. This way, there's a direct path from any peer to any other peer, thus
+					decentralizing the server's control during the distribution process.</p>
+				<p style="text-align:justify"><b>Check it out here:</b><a
+						href="https://github.com/vriddhipai/p2p-file-sharing"> P2P File Sharing</a></p>
+
+			</article>
+			<article id="work">
+				<h2 class="major">NBA Player Database</h2>
+				<span class="image main"><img src="images/nba_sql.png" alt="" /></span>
+				<p style="text-align:justify">NBA Player's Database is a web application project that I helped create as
+					a team project in COP 5725, Spring 2019. The project helped me learn how to design and implement a
+					dynamically responsive web site. Front-end pages are developed using PHP with Boostrap framework to
+					set the UI template. Within the first two weeks, we found a large dataset on Kaggle with real NBA
+					players' records and I got to design the website's look, feel, flow and control. The point of
+					recreating such a website was to allow fans to have a comprehensive search experience when wanting
+					to know the history of their favorite players and teams or have even intuitive forecast-based
+					queries answered. For instance, users get to query details like the probability of the team that has
+					the most total salary of players winning the championship and the probability of a random team
+					winning the championship. Such queries show up as dynamic visualizations for a better experience for
+					the user, which we facilitated through Chart.js (https://www.chartjs.org/), an open-source
+					JavaScript library for data visualization. The queries were developed in SQL and the database was
+					established on Oracle Database System. This project helped me not just gain experience with
+					full-stack web application development but also explore my strengths in design and team
+					leadership. </p>
+				<p style="text-align:justify"><b>Check it out here: </b><a
+						href="https://github.com/vriddhipai/NBA-Player-Database"> NBA Player Database</a></p>
+
+
+			</article>
+			<article id="work">
+				<h2 class="major">Twitter Clone</h2>
+				<span class="image main"><img src="images/twitter.png" alt="" /></span>
+				<p style="text-align:justify">This interesting take on Twitter involved recreating the popular features
+					of Twitter like Subscribing to fellow users to view their activity, generating your own tweets and
+					even searching for trending topics using hashtags. A user can also search for another user using the
+					"@" query tag! The application is entirely developed in F#, which is my latest experience with a
+					brand new language. Unlike my usual approach of using object-oriented programming fundamentals, I
+					utilized functional programming which is much more procedure-oriented. I also used Akka.NET, a
+					not-so-popular .NET framework, which is very useful for distributed computing and is open source!
+					You can learn more about it <a href="https://getakka.net/articles/intro/what-is-akka.html">here</a>.
+				</p>
+				<p><b>Check it out here: </b><a href="https://github.com/vriddhipai/Twitter"> Twitter Clone</a>
+				</p>
+
+			</article>
+			<article id="work">
+				<h2 class="major">Gossip Protocol</h2>
+				<span class="image main"><img src="images/gossipprotocol.jpg" alt="" /></span>
+				<p style="text-align:justify"><a
+						href="https://www.geeksforgeeks.org/the-gossip-protocol-in-cloud-computing/">Gossip Protocol
+					</a>is a communication protocol that works on randomization for infromation dissemination thus
+					bringing much more reliability and robustness, especially when the nodes/participants involved need
+					access to the data simulatenously. Inspired by one of my professors' meticulous research and
+					expertise on the same, I utilized F# and Akka.NET to establish a network of nodes in a network
+					requiring parallel access to some information or "gossip" and demonstrated how the Actor Model
+					facilitates the dissemination when the underlying network's topology is varied. This helped me
+					further understand how the gossip protocol behaves when external factors come in to play!</p>
+				<p style="text-align:justify"><b>Check it out here:</b><a
+						href="https://github.com/vriddhipai/gossip-pushsum-protocol"> Gossip Protocol</a></p>
+
+			</article>
+			<article id="work">
+				<h2 class="major">Mininet:Mesh Topology</h2>
+				<span class="image main"><img src="images/mesh-topology.jpg" alt="" /></span>
+				<p style="text-align:justify">My love for always learning something brand new made me learn some
+					in-depth concepts of computer networks in context of distributed multimedia. I decided to experiment
+					with topologies and protocols in different combinations and recorded how the network behaves. The
+					challenge here was to be able to set up a virtual simulation of the actual network which made me
+					explore <a href="http://mininet.org/">Mininet </a>. This project was particularly fun because I got
+					to explore another open source platform like <a href="https://www.wireshark.org/">Wireshark</a> to
+					be able to set the environment up and running for Mininet. The topology scripts were all developed
+					in Python and run on a Linux Virtual Machine. It's safe to say, I really got the hang of Linux CLI
+					with this project!</p>
+				<p style="text-align:justify"><b>Check it out here: </b><a
+						href="https://github.com/vriddhipai/mininet_mesh-topology_OSPF_BGP"> Mesh Topology</a></p>
+
+			</article>
+
+			</article>
+			<article id="work">
+				<h2 class="major">Cafe Billing System</h2>
+				<span class="image main"><img src="images/billingsystem.png" alt="" /></span>
+				<p style="text-align:justify">C++ will always be special being the first high-level programming language
+					during my early days with programming. I learnt my way around object-oriented programming, creating
+					and extending classes, understanding interfaces and pointers through C++. This popular project
+					really was my way to challenge myself in a full-fledged cafe billing context and deliver a versatile
+					menu-driven program for a flawless system that can handle any number of customers at a time!</p>
+				<p style="text-align:justify"><b>Check it out here: </b><a
+						href="https://github.com/vriddhipai/Shop-Billing-System"> Cafe Billing System</a></p>
+
+			</article>
+
+			<!-- Articles -->
+			<article id="articles">
+				<h2 class="major">Domain-Intelligent Feature<br></br>Selection</br></h2>
+				<span class="image main"><img src="images/featureselection.png" alt="" /></span>
+				<p style="text-align:justify"><b>Check it out here: </b><a
+						href="https://ieeexplore.ieee.org/document/8753092">Simultaneous Feature Selection for
+						High-Dimensional Data</a></p>
+
+			</article>
+			<article id="articles">
+				<h2 class="major">Graph Isomorphism Problem</h2>
+				<span class="image main"><img src="images/Graph-Isomorphism-Example.png" alt="" /></span>
+				<p><b>Check it out here: </b><a
+						href="https://github.com/vriddhipai/graph-isomorphism-problem-survey">Graph Isomorphism</a></p>
+			</article>
+
+			<article id="articles">
+				<h2 class="major">An analogy of<br></br>Constraint Systems</br></h2>
+				<span class="image main"><img src="images/Theory-of-Constraints.png" alt="" /></span>
+				<p style="text-align:justify"><b>Check it out here: </b><a
+						href="https://github.com/vriddhipai/combinatorial-characterization-of-constraint-systems-survey/tree/main">Geometric
+						Constraint Systems</a></p>
+			</article>
+
+			<!-- Resume -->
+			<article id="resume">
+				<h2 class="major">My resume</h2>
+				<span class="image main"><img src="images/resumepic.gif" alt="" /></span>
+				<p style="text-align:justify"><b><a
+							href="https://drive.google.com/file/d/1w3QvQ0Hwuluwu7JYZ2DTDBLm3edFAINJ/view?usp=sharing">Click
+							to View Resume</a></b></p>
+
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<ul class="icons">
+					<li><a href="https://twitter.com/vriddhi_pai" class="icon brands fa-twitter"><span
+								class="label">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/in/vriddhipai/" class="icon brands fa-linkedin"><span
+								class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/vriddhipai" class="icon brands fa-github"><span
+								class="label">GitHub</span></a></li>
+				</ul>
+			</article>
+
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
+
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+				</section>
+
+				<section>
+					<h3 class="major">Lists</h3>
+
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
+
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id=bg></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
