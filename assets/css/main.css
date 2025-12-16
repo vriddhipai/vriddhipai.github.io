@@ -1813,7 +1813,11 @@ img {
 
 /* Let headings wrap nicely (avoid using <br> for layout) */
 h2.major {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  line-height: 1.4;
   white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   text-wrap: balance;
 }
 
